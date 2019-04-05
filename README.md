@@ -1,12 +1,19 @@
 ## FIPS 140-2 standards
 
 FIPS or Federal Information Protection standards 140-2 is a US government security standard used to prove cryptographic modules. It is covered under title Security requirements for cryptographic modules. Getting a FIPS 140-2 certificate assures that the product has been tested and is approved by US/Canadian governments.  It is widely accepted by other governments even though it is a US/Canadian government standard. 
+
 FIPS 140-2 validates both hardware and software components of a cryptographic module. 
+
 The FIPS certification standard defines 4 increasing, qualitative levels, which are very thoughtfully named: level 1, 2, 3 and 4.
+
 ```Level 1:``` Requires production grade equipment and an approved algorithm.(externally tested)
+
 ```Level 2:``` Requires the ability of temper-detection and role based authentication. Software implementation must run on OS meeting common criteria at EAL2.(Evaluation Assurance Level)
+
 ```Level 3:``` Required the device to be temper resistance and user-based authentication. There must be a logical separation between the interfaces by which CSP “critical security parameters” enter and exit the system. Like CSP needs to be encrypted before entering and leaving the system.
+
 ```Level 4:``` The system should be temper-active. In the events of an attack the system should be able to take actions to protect the CSPs. For example setting the parameters to zero.
+
 *FIPS 140-2 allows software only implementation of level 2 and level 3(Requires a lot of standards to be followed)*
 
 ## Routing
