@@ -1,6 +1,7 @@
+
 ## FIPS 140-2 standards
 
-FIPS or Federal Information Protection standards 140-2 is a US government security standard used to prove cryptographic modules. It is covered under title Security requirements for cryptographic modules. Getting a FIPS 140-2 certificate assures that the product has been tested and is approved by US/Canadian governments.  It is widely accepted by other governments even though it is a US/Canadian government standard. 
+FIPS or Federal Information Protection standards 140-2 is a US government security standard used to approve cryptographic modules. It is covered under title Security requirements for cryptographic modules. Getting a FIPS 140-2 certificate assures that the product has been tested and is approved by US/Canadian governments.  It is widely accepted by other governments even though it is a US/Canadian government standard. 
 
 FIPS 140-2 validates both hardware and software components of a cryptographic module. 
 
@@ -98,3 +99,50 @@ EAL5: Semiformally Designed and Tested
 EAL6: Semiformally Verified Design and Tested
 
 EAL7: Formally Verified Design and Tested
+
+## Common Criteria
+The Common Criteria for Information Technology Security Evaluation (referred to as Common Criteria or CC) is an international standard (ISO/IEC 15408) for computer security certification.
+
+Common Criteria provides assurance that the process of specification, implementation and evaluation of a computer security product has been conducted in a rigorous and standard and repeatable manner() at a level that is commensurate with the target environment for use.
+
+
+```Target of Evaluation (TOE)``` – the product or system that is the subject of the evaluation.
+```Protection Profile (PP)``` – a document, which identifies security requirements for a class of security devices
+```Security Target (ST)``` – the document that identifies the security properties of the target of evaluation.
+```Security Functional Requirements (SFRs)``` – specify individual security functions which may be provided by a product.
+
+
+The evaluation process also tries to establish the level of confidence:
+
+```Evaluation Assurance Level (EAL)``` – the numerical rating describing the depth of an evaluation.
+
+Common Criteria certification cannot guarantee security, but it can ensure that claims about the security attributes of the evaluated product were independently verified
+
+
+### Crypto engineering
+
+ 
+
+### Security testing
+Security testing is a process intended to reveal flaws in the security mechanisms of an information system. It  ensure that the system is capable of protecting data and maintain the functionality as intended.
+
+It checks for confidentiality, integrity, authentication, availability, authorization and non-repudiation
+
+
+*Non-repudiation is a way to guarantee that the sender of a message cannot later deny having sent the message and that the recipient cannot deny having received the message.*
+
+Due to the logical limitations of security testing, passing security testing is not an indication that no flaws exist.
+ 
+
+### Cryptography
+
+Cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages.
+
+```Symmetric-key cryptography```
+- block ciphers(AES/DES)
+	A block cipher enciphers input in blocks of plaintext as opposed to individual characters
+- stream ciphers
+	Create an arbitrarily long stream of key material, which is combined with the plaintext bit-by-bit or character-by-character, somewhat like the one-time pad
+
+```Public-key cryptography```
+RSA
