@@ -20,21 +20,33 @@ The FIPS certification standard defines 4 increasing, qualitative levels, which 
 ## Routing
 Routing is the process of moving the packing from one host to another. Routing can either one of three types:
 
-Static routing
+### Static routing
+Static routing is a process in which we have to manually add routes in routing table.
 
-Dynamic Routing
+```Advantages```
 
-Default Routing
+- No routing overhead for router CPU which means a cheaper router can be used to do routing.
+- It adds security because only administrator can allow routing to particular networks only.
+- No bandwidth usage between routers.
 
+### Dynamic Routing
+Dynamic routing makes automatic adjustment of the routes according to the current state of the route in the routing table. Dynamic routing uses protocols to discover network destinations and the routes to reach it.(RIP & OSPF)
+
+### Default Routing
+This is the method where the router is configured to send all packets towards a single router (next hop). It doesn’t matter to which network the packet belongs, it is forwarded out to router which is configured for default routing
 
 ## Switching
 Switching is the process of channeling data received from any number of input ports, to another designated port that will transmit the data to its desired destination
 
-Circuit switching
+### Circuit switching
 
-Packet switching
+	Circuit switching is when two nodes communicate with each other over a dedicated communication path.
 
-Message Switching
+### Packet switching
+
+	The entire message is broken down into smaller chunks called packets. The switching information is added in the header of each packet and transmitted independently.
+
+### Message Switching
 
 	A switch working on message switching, first receives the whole message and buffers it until there are resources available to transfer it to the next hop.
 
