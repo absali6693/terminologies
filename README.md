@@ -90,7 +90,7 @@ SSH uses public-key cryptography to authenticate the remote computer and allow i
 
 IPsec includes protocols for establishing mutual authentication between hosts at the beginning of a session and negotiation of cryptographic keys to use during the session.
 
-IPsec is a layer 3 OSI model or Internet Layer end-to-end security scheme, while some other Internet security systems in widespread use operate above layer 3, such as Transport Layer Security (TLS) and Secure Shell (SSH), both of which operate at the Application layer. 
+IPsec is a layer 3 OSI model or Internet Layer end-to-end security scheme, while some other Internet security systems in widespread use operate above layer 3, such as Transport Layer Security (TLS) and Secure Shell (SSH), both of which operate at the Application layer. IPSec has access to headers so it can protect them. SSL/TLS cannot do that.
 
 
 ## Evaluation Assurance Level(EAL)
@@ -119,8 +119,11 @@ Common Criteria provides assurance that the process of specification, implementa
 
 
 ```Target of Evaluation (TOE)``` – the product or system that is the subject of the evaluation.
-```Protection Profile (PP)``` – a document, which identifies security requirements for a class of security devices
+
+```Protection Profile (PP)``` – a document, which identifies security requirements for a class of security devices.
+
 ```Security Target (ST)``` – the document that identifies the security properties of the target of evaluation.
+
 ```Security Functional Requirements (SFRs)``` – specify individual security functions which may be provided by a product.
 
 
@@ -158,3 +161,9 @@ Cryptography is about constructing and analyzing protocols that prevent third pa
 
 ```Public-key cryptography```
 RSA
+
+
+### VPN
+VPN enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network. Applications running across a VPN may therefore benefit from the functionality, security, and management of the private network. 
+
+VLAN is a subcategory of VPN and VPN is a means to create a secure network for secure data transmission. A VLAN is basically a means to logically segregate networks without physically segregating them.
